@@ -14,7 +14,7 @@ export default function Listado({addItem}) {
     <div className='container'>
       {/* renderizamos los Item aquí */}
       {data.map((item)=>
-        <Item addItem = {()=>addItem()} item = {item} key = {item.id}/>
+        <Item addItem = {addItem} item = {item} key = {item.id}/>
       )}
     </div>
   )

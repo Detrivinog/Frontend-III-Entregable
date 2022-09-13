@@ -24,7 +24,7 @@ export default function Item({addItem, item}) {
       {/* maquetar Item aquí */}
       <h3>{item.producto.nombre}</h3>
       <p>{item.producto.descripcion}</p>
-      <h5>En stock: <span>{stock > 0 ? stock : 'agotado'}</span></h5>
+      <h5>En stock: {stock > 0 ? stock : <span>Agotado</span>}</h5>
       <button onClick={() => onClickHandler()} disabled = {stock<=0}>{stock > 0 ? 'COMPRAR' : 'SIN STOCK'}</button>
     </div>
   )

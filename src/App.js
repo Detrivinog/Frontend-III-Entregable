@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Cabecera purchaseItems = {purchaseItems}/>
-      <Listado addItem = {() => addItem()}/>
+      <Listado addItem = {addItem}/>
     </div>
   );
 }
